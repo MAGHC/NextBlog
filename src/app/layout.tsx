@@ -1,6 +1,7 @@
 import Header from '@/components/Header/Header';
 import './globals.css';
 import { Oswald } from 'next/font/google';
+import Footer from '@/components/Footer/Footer';
 
 const owswald = Oswald({ subsets: ['latin'] });
 
@@ -14,7 +15,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={owswald.className}>
         <Header></Header>
-        {children}
+        <main>{children}</main>
+        <Footer></Footer>
       </body>
     </html>
   );
