@@ -7,7 +7,7 @@ const Post = async () => {
 
   return (
     <section>
-      <h3 className={style.myPost}>My Posts ! 마우스를 올려 제목과 설명을 확인할수있습니다.</h3>
+      <h3 className={style.myPost}>My Posts ! Pls put mouse on the image</h3>
       <GridWrapper posts={posts}></GridWrapper>
     </section>
   );
