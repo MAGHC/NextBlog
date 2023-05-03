@@ -1,0 +1,9 @@
+.section {
+  margin: 4rem 0;
+}
+
+.section h2 {
+  font-size: 1.2rem;
+  margin: 1rem;
+  font-weight: bold;
+}
