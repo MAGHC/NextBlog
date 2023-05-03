@@ -16,13 +16,15 @@ const Header = () => {
       </Link>
 
       <nav className={style.nav}>
-        {NAV_MENUS.map((nav, i) => {
-          return (
-            <Link key={i} href={nav.link}>
-              {nav.menu}
-            </Link>
-          );
-        })}
+        <ul className={style.navUl}>
+          {NAV_MENUS.map((nav, i) => {
+            return (
+              <li className={style.navItem} key={i}>
+                <Link href={nav.link}>{nav.menu}</Link>
+              </li>
+            );
+          })}
+        </ul>
       </nav>
     </header>
   );
