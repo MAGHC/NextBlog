@@ -3,35 +3,30 @@
     "title": "프론트엔드의 성능측정",
     "description": "프론트엔드의 성능측정에대해서",
     "date": "2022-12-7",
-    "path": "performance",
-    "featured": true
+    "path": "performance"
   },
   {
     "title": "ssr과 csr",
     "description": "ssr과 csr에 대해서",
     "date": "2022-11-7",
-    "path": "ssr-csr",
-    "featured": true
+    "path": "ssr-csr"
   },
   {
     "title": "상태관리",
     "description": "프론트엔드의 상태관리",
     "date": "2022-12-7",
-    "path": "status",
-    "featured": true
+    "path": "status"
   },
   {
     "title": "테스트",
     "description": "프론트엔드의 테스트에대해서",
     "date": "2022-1-7",
-    "path": "test",
-    "featured": true
+    "path": "test"
   },
   {
     "title": "ui,ux",
     "description": "프론트엔드의 ui,ux에대해서",
     "date": "2022-12-7",
-    "path": "ui-ux",
-    "featured": true
+    "path": "ui-ux"
   }
 ]
