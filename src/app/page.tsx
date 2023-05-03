@@ -1,3 +1,15 @@
+import FeaturedPost from '@/components/Posts/Posts';
+import Profile from '@/components/Profile/Profile';
+import SliderPosts from '@/components/SliderPosts/SliderPosts';
+
 export default function Home() {
-  return <h1>h1</h1>;
+  return (
+    <section>
+      <Profile></Profile>
+      {/* @ts-expect-error Async Server Component */}
+      <FeaturedPost></FeaturedPost>
+      {/* @ts-expect-error Async Server Component */}
+      <SliderPosts></SliderPosts>
+    </section>
+  );
 }
