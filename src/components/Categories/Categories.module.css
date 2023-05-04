@@ -1,0 +1,14 @@
+.category {
+  font-size: x-large;
+  margin-bottom: 2rem;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.categories li {
+  font-size: 1.2rem;
+}
