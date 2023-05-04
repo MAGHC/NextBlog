@@ -3,30 +3,64 @@
     "title": "프론트엔드의 성능측정",
     "description": "프론트엔드의 성능측정에대해서",
     "date": "2022-12-7",
-    "path": "performance"
+    "path": "performance",
+    "featured": true,
+    "category": "front"
   },
   {
     "title": "ssr과 csr",
     "description": "ssr과 csr에 대해서",
     "date": "2022-11-7",
-    "path": "ssr-csr"
+    "path": "ssr-csr",
+    "featured": true,
+    "category": "front"
   },
   {
     "title": "상태관리",
     "description": "프론트엔드의 상태관리",
     "date": "2022-12-7",
-    "path": "status"
+    "path": "status",
+    "featured": true,
+    "category": "front"
   },
   {
     "title": "테스트",
     "description": "프론트엔드의 테스트에대해서",
     "date": "2022-1-7",
-    "path": "test"
+    "path": "test",
+    "featured": true,
+    "category": "front"
   },
   {
     "title": "ui,ux",
     "description": "프론트엔드의 ui,ux에대해서",
     "date": "2022-12-7",
-    "path": "ui-ux"
+    "path": "ui-ux",
+    "featured": true,
+    "category": "front"
+  },
+  {
+    "title": "express로 재구현하기",
+    "description": "express로 기존구현했던 것 재구현",
+    "date": "2022-12-7",
+    "path": "node",
+    "featured": false,
+    "category": "back"
+  },
+  {
+    "title": "프록시 캐시, 캐시무효화",
+    "description": "프록시캐시,캐시무효화에 대해서",
+    "date": "2022-12-7",
+    "path": "http",
+    "featured": false,
+    "category": "http"
+  },
+  {
+    "title": "인터넷 네트워크",
+    "description": "IP,TCP,UDP",
+    "date": "2022-12-7",
+    "path": "http2",
+    "featured": false,
+    "category": "http"
   }
 ]
