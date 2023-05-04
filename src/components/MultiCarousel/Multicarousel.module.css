@@ -1,3 +1,10 @@
 .item {
+  width: 350px;
   margin-right: 4rem;
+}
+
+@media (max-width: 654px) {
+  .item a {
+    margin-right: 0;
+  }
 }
