@@ -1,4 +1,4 @@
-import FeaturedPost from '@/components/Posts/Posts';
+import FeaturedPost from '@/components/Posts/FeaturedPosts';
 import Profile from '@/components/Profile/Profile';
 import SliderPosts from '@/components/SliderPosts/SliderPosts';
 
