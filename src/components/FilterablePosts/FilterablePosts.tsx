@@ -23,7 +23,11 @@ const FilterablePosts = ({ posts, categories }: Props) => {
   return (
     <section className={style.Wrapper}>
       <GridWrapper posts={filteredPosts}></GridWrapper>
-      <Categories handleClick={setFilterableCategories} categories={categories}></Categories>
+      <Categories
+        handleClick={setFilterableCategories}
+        nowCategory={filterableCategories}
+        categories={categories}
+      ></Categories>
     </section>
   );
 };

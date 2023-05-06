@@ -12,3 +12,8 @@
 .categories li {
   font-size: 1.2rem;
 }
+
+.selected {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
