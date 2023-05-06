@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  gap: 1rem;
+  gap: 2rem;
   place-items: center;
   grid-template-columns: repeat(3, minmax(150px, 1fr));
 }
