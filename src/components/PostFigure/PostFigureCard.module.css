@@ -15,7 +15,7 @@
   background-color: #1c1d1c;
   transform: translateY(100%);
   transition: all 0.5s;
-  opacity: 0.8;
+  opacity: 0;
 }
 
 .caption {
@@ -54,6 +54,7 @@
 
 .blogFigure:hover::before {
   transform: translateY(0);
+  opacity: .8;
 }
 
 .blogFigure:hover .caption {
