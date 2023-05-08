@@ -3,7 +3,7 @@ import './globals.css';
 import { Oswald } from 'next/font/google';
 import Footer from '@/components/Footer/Footer';
 
-const owswald = Oswald({ subsets: ['latin'] });
+const owswald = Oswald({ subsets: ['cyrillic'] });
 
 export const metadata = {
   title: '김정수의 블로그',
