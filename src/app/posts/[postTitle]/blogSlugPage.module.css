@@ -1,0 +1,39 @@
+.blogArticle {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(181, 180, 180, 0.1);
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.meta h1 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+  font-weight: bold;
+  border-bottom: 1px solid black;
+}
+.meta h3 {
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+.meta h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
+
+.blogArticle img {
+  margin: 1rem;
+  align-self: center;
+}
+
+.adjacantMetas {
+  display: flex;
+}
+
+.info {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
