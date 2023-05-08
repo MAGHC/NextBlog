@@ -10,7 +10,7 @@ export type Post = {
   category: string;
 };
 
-export type MdPost = Post & { content: string };
+export type MdPost = Post & { content: string; prev: null | Post; next: Post | null };
 
 export async function getFeaturedPosts(): Promise<Post[]> {
   return getAllPosts().then((posts) => posts.filter((post) => post.featured));
@@ -26,11 +26,16 @@ export async function getAllPosts(): Promise<Post[]> {
 
 export async function getPost(title: string): Promise<MdPost> {
   const filePath = path.join(process.cwd(), 'data', 'blogPosts', `${title}.md`);
-  const data = await getAllPosts().then((posts) => posts.find((post) => post.path === title));
+  const posts = await getAllPosts();
+  const data = posts.find((post) => post.path === title);
 
   if (!data) throw new Error('no post');
 
+  const thisIdx = posts.indexOf(data);
+  const prev = thisIdx === 0 ? null : posts[thisIdx - 1];
+  const next = thisIdx === posts.length - 1 ? null : posts[thisIdx + 1];
+
   const content = await readFile(filePath, 'utf-8');
 
-  return { ...data, content };
+  return { ...data, content, prev, next };
 }
