@@ -1,3 +1,4 @@
+```js
 https://www.youtube.com/watch?v=pkYUcKWOqPs
 
 참고
@@ -50,3 +51,4 @@ css 까지 더해서 실제로 랜더링 되는 모습 테스트-> 시각적 회
 
 왜냐면 느리니까 단지 node 의 경우 빠르지만 webApi 사용이 불가능하여
 jsdom 같은걸활용한다고한다
+```
