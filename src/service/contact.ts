@@ -1,6 +1,6 @@
 import { EmailData } from './email';
 
-export async function sendEmail(emailData: EmailData) {
+export async function abstractSendEmail(emailData: EmailData) {
   const res = await fetch('api/conatct', {
     method: 'POST',
     body: JSON.stringify(emailData),
