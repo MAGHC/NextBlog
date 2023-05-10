@@ -29,11 +29,11 @@ const ContactForm = () => {
 
     abstractSendEmail(contactForm)
       .then(() => {
-        setStatusBar({ message: '메일 전송에 성공 했습니다', isSuccess: true });
+        setStatusBar({ message: '성공', isSuccess: true });
         setContactForm(DEFAULT_FORM);
       })
       .catch(() => {
-        setStatusBar({ message: '메일 전송에 실패 했습니다', isSuccess: false });
+        setStatusBar({ message: '실패', isSuccess: false });
       })
       .finally(() => {
         setTimeout(() => {
