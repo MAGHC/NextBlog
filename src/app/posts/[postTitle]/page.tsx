@@ -1,5 +1,5 @@
 import RemarkDown from '@/components/RemarkDown/RemarkDown';
-import { getPost } from '@/service/posts';
+import { getAllPosts, getPost } from '@/service/posts';
 import Image from 'next/image';
 
 import style from './blogSlugPage.module.css';
@@ -52,3 +52,9 @@ const page = async ({ params: { postTitle } }: Props) => {
 };
 
 export default page;
+export async function generateStaticParams() {
+  const posts = await getAllPosts();
+  return posts.map((post) => ({
+    postTitle: post.path,
+  }));
+}
