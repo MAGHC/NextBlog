@@ -4,12 +4,22 @@ import Image from 'next/image';
 
 import style from './blogSlugPage.module.css';
 import AdjacentPostCard from '@/components/AdjacentPostCard/AdjacentPostCard';
+import { Metadata } from 'next';
 
 type Props = {
   params: {
     postTitle: string;
   };
 };
+
+export async function generateMetadata({ params: { postTitle } }: Props): Promise<Metadata> {
+  const postData = await getPost(postTitle);
+
+  return {
+    title: postData.title,
+    description: postData.description,
+  };
+}
 
 const page = async ({ params: { postTitle } }: Props) => {
   const postData = await getPost(postTitle);

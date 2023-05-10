@@ -6,8 +6,14 @@ import Footer from '@/components/Footer/Footer';
 const owswald = Oswald({ subsets: ['cyrillic'] });
 
 export const metadata = {
-  title: '김정수의 블로그',
-  description: '모든것을 표현하고싶은 풀스택 개발자 김정수',
+  title: {
+    default: '김정수의 블로그',
+    template: '김정수의 블로그 | %s',
+  },
+  description: '모든것을 표현하고싶은 개발자 김정수',
+  icons: {
+    icon: 'favicon.ico',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
