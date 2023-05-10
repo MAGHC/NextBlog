@@ -3,8 +3,8 @@ import ContactForm from '@/components/ContactForm/ContactForm';
 import style from './contactPage.module.css';
 import { Metadata } from 'next';
 
-export const metatda: Metadata = {
-  title: 'Contact',
+export const metadata: Metadata = {
+  title: 'Contact ',
   description: '김정수에게 메일보내기',
 };
 
