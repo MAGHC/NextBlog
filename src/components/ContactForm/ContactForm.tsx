@@ -14,10 +14,13 @@ type Form = {
 };
 
 const DEFAULT_FORM = { from: '', subject: '', message: '' };
+const DEFAULT_BTN_VALUE = 'SUBMIT';
+const LOADING_BTN_VALUE = 'LOADING';
 
 const ContactForm = () => {
   const [contactForm, setContactForm] = useState<Form>(DEFAULT_FORM);
   const [statusBar, setStatusBar] = useState<null | StatusBarType>(null);
+  const [btnText, setBtnText] = useState(DEFAULT_BTN_VALUE);
 
   const changeForm = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { value, name } = e.target;
@@ -27,12 +30,15 @@ const ContactForm = () => {
   const submit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    setBtnText(LOADING_BTN_VALUE);
     abstractSendEmail(contactForm)
       .then(() => {
+        setBtnText(DEFAULT_BTN_VALUE);
         setStatusBar({ message: '성공', isSuccess: true });
         setContactForm(DEFAULT_FORM);
       })
       .catch(() => {
+        setBtnText(DEFAULT_BTN_VALUE);
         setStatusBar({ message: '실패', isSuccess: false });
       })
       .finally(() => {
@@ -90,7 +96,7 @@ const ContactForm = () => {
         />
       </div>
 
-      <button className={style.submitBtn}>SUBMIT</button>
+      <button className={style.submitBtn}>{btnText}</button>
     </form>
   );
 };
